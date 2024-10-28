@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4A90E2, #7B4397);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+   
+   
+    
+  }
+  .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .glass{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  }
+  .add-task-btn {
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  .add-multiple-btn{
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .search-input {
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    width: 33.33%;
+    outline: none;
+    
+    
+  }
+  
+
+
+  .search-input::placeholder {
+    color: #7a7a7a; /* Set your desired color */
+    opacity: 1; /* Ensures full color opacity */
+}
+  .search-input :focus{
+    border-color: #3F51B5; box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+    outline: none;
+  }
+  
+  
+  .task-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .column-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .task-count {
+    color: #000000; 
+  }
+  
+  .column-border-red {
+    border-top: 2px solid #EF4444; 
+    margin-top: 0.5rem;
+  }
+  
+  .column-border-yellow {
+    border-top: 2px solid #F59E0B; 
+    margin-top: 0.5rem;
+  }
+  
+  .column-border-green {
+    border-top: 2px solid #10B981; 
+    margin-top: 0.5rem;
+  }
+  
+  
+  .task-item {
+    border: 1px solid;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+  }
+  
+  .task-border-red {
+    border-color: #FCA5A5; 
+  }
+  
+  .task-border-yellow {
+    border-color: #FDE68A; 
+  }
+  
+  .task-border-green {
+    border-color: #A7F3D0;
+  }
+  
+  .task-title {
+    font-weight: bold;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .delete-btn {
+    background-color: #EF4444; 
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .edit-btn {
+    background-color: #F59E0B; 
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }

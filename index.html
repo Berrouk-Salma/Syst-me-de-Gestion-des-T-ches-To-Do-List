@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="output.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container glass" >
+        <div class="header-container">
+            <button class="add-task-btn glass">Add Task +</button>
+            <input type="text" placeholder="Search ..." class="search-input glass" />
+            <button class="add-multiple-btn glass">Add Multiple +</button>
+        </div>
+
+        <!-- Task Columns -->
+        <div class="task-columns">
+
+            <!-- To Do Column -->
+            <div>
+                <h2 class="column-title">To do <span class="task-count">(1)</span></h2>
+                <div class="column-border-red">
+                    <div class="task-item task-border-red">
+                        <p class="task-title">Brief Soutenances Croisées</p>
+                        <div class="task-buttons">
+                            <button class="delete-btn">Delete</button>
+                            <button class="edit-btn">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- In Progress Column -->
+            <div>
+                <h2 class="column-title">In progress <span class="task-count">(2)</span></h2>
+                <div class="column-border-yellow">
+                    <div class="task-item task-border-yellow">
+                        <p class="task-title">WORKSHOP 2</p>
+                        <div class="task-buttons">
+                            <button class="delete-btn">Delete</button>
+                            <button class="edit-btn">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Done Column -->
+            <div>
+                <h2 class="column-title">Done <span class="task-count">(3)</span></h2>
+                <div class="column-border-green">
+                    <div class="task-item task-border-green">
+                        <p class="task-title">Brief 5</p>
+                        <div class="task-buttons">
+                            <button class="delete-btn">Delete</button>
+                            <button class="edit-btn">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #4A90E2, #7B4397);
     color: #333;
@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
    
    
-    
+/*     
   }
   .container{
     width: 80%;
@@ -22,15 +22,15 @@ body {
     margin-top: 5rem;
     padding: 10px;
     margin-bottom: 1.5rem;
-  }
-  .glass{
+  } */
+  /* .glass{
     background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-  }
-  .add-task-btn {
+  } */
+  /* .add-task-btn {
     color: rgb(0, 0, 0);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -49,12 +49,10 @@ body {
     
     
   }
-  
-
 
   .search-input::placeholder {
-    color: #7a7a7a; /* Set your desired color */
-    opacity: 1; /* Ensures full color opacity */
+    color: #7a7a7a; 
+    opacity: 1; 
 }
   .search-input :focus{
     border-color: #3F51B5; box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
@@ -135,4 +133,4 @@ body {
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
-  }
+  } */

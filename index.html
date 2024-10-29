@@ -5,45 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="./main.js"></script>
 </head>
 
-<body>
-    <div class="container glass" >
-        <div class="header-container">
-            <button class="add-task-btn glass">Add Task +</button>
-            <input type="text" placeholder="Search ..." class="search-input glass" />
-            <button class="add-multiple-btn glass">Add Multiple +</button>
+<body class="flex justify-center h-screen bg-gradient-to-r from-blue-500 to-purple-700 text-gray-800">
+    <div class="container mx-auto w-4/5 mt-20 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg">
+        
+        
+        <div class="header-container flex justify-between mb-8">
+            <button class="add-task-btn bg-white bg-opacity-50 text-black px-4 py-2 rounded-md shadow-md">Add Task +</button>
+            <input type="text" placeholder="Search ..." class="search-input bg-white bg-opacity-30 text-gray-200 px-4 py-2 rounded-md focus:border-blue-600 focus:ring-2 focus:ring-blue-500 outline-none" />
+            <button class="add-multiple-btn bg-white bg-opacity-50 text-black px-4 py-2 rounded-md shadow-md">Add Multiple +</button>
         </div>
 
-        <!-- Task Columns -->
-        <div class="task-columns">
+      
+        <div class="task-columns grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
 
-            <!-- To Do Column -->
+           
             <div>
-                <h2 class="column-title">To do <span class="task-count">(1)</span></h2>
-                <div class="column-border-red">
-                    <div class="task-item task-border-red">
-                        <p class="task-title">Brief Soutenances Croisées</p>
-                        <div class="task-buttons">
-                            <button class="delete-btn">Delete</button>
-                            <button class="edit-btn">Edit</button>
+                <h2 class="column-title text-lg font-semibold text-white">To do <span class="task-count">(1)</span></h2>
+                <div class="border-t-4 border-red-500 mt-2">
+                    <div class="task-item bg-white bg-opacity-20 border border-red-200 p-4 mt-4 rounded-lg shadow-md">
+                        <p class="task-title font-bold text-white">Brief Soutenances Croisées</p>
+                        <div class="task-buttons flex gap-2 mt-2">
+                            <button class="delete-btn bg-red-500 text-white px-3 py-1 rounded-md">Delete</button>
+                            <button class="edit-btn bg-yellow-500 text-white px-3 py-1 rounded-md">Edit</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- In Progress Column -->
+       
             <div>
-                <h2 class="column-title">In progress <span class="task-count">(2)</span></h2>
-                <div class="column-border-yellow">
-                    <div class="task-item task-border-yellow">
-                        <p class="task-title">WORKSHOP 2</p>
-                        <div class="task-buttons">
-                            <button class="delete-btn">Delete</button>
-                            <button class="edit-btn">Edit</button>
+                <h2 class="column-title text-lg font-semibold text-white">In progress <span class="task-count">(2)</span></h2>
+                <div class="border-t-4 border-yellow-500 mt-2">
+                    <div class="task-item bg-white bg-opacity-20 border border-yellow-200 p-4 mt-4 rounded-lg shadow-md">
+                        <p class="task-title font-bold text-white">WORKSHOP 2</p>
+                        <div class="task-buttons flex gap-2 mt-2">
+                            <button class="delete-btn bg-red-500 text-white px-3 py-1 rounded-md">Delete</button>
+                            <button class="edit-btn bg-yellow-500 text-white px-3 py-1 rounded-md">Edit</button>
                         </div>
                     </div>
                 </div>
@@ -51,13 +52,13 @@
 
             <!-- Done Column -->
             <div>
-                <h2 class="column-title">Done <span class="task-count">(3)</span></h2>
-                <div class="column-border-green">
-                    <div class="task-item task-border-green">
-                        <p class="task-title">Brief 5</p>
-                        <div class="task-buttons">
-                            <button class="delete-btn">Delete</button>
-                            <button class="edit-btn">Edit</button>
+                <h2 class="column-title text-lg font-semibold text-white">Done <span class="task-count">(3)</span></h2>
+                <div class="border-t-4 border-green-500 mt-2">
+                    <div class="task-item bg-white bg-opacity-20 border border-green-200 p-4 mt-4 rounded-lg shadow-md">
+                        <p class="task-title font-bold text-white">Brief 5</p>
+                        <div class="task-buttons flex gap-2 mt-2">
+                            <button class="delete-btn bg-red-500 text-white px-3 py-1 rounded-md">Delete</button>
+                            <button class="edit-btn bg-yellow-500 text-white px-3 py-1 rounded-md">Edit</button>
                         </div>
                     </div>
                 </div>
@@ -65,8 +66,6 @@
 
         </div>
     </div>
-
-
 </body>
 
 </html>
